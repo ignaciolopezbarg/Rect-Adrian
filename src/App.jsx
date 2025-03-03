@@ -5,7 +5,9 @@ function App() {
   
 
   return (
-  <div>Hola React</div>
+  <div>
+    <h1></h1>
+  </div>
   )
 }
 
