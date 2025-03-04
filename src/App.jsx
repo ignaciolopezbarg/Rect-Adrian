@@ -1,18 +1,16 @@
 import "./App.css";
+import Child from "./components/Child";
 
-const movies = ["Lord of the Rings", "Star Wars", "Dune", "Despertares"];
+import React from 'react'
 
 function App() {
+  const textito = 'hola desde el padre'
   return (
     <div>
-      <h1>Renderizado de Listas</h1>
-      {movies.map((movie, index) => (
-        <p key={index}>
-          {index+1} - {movie}
-        </p>
-      ))}
+      <h1>Props-Comunicacion entre componentes</h1>
+    <Child msg= {textito} />
     </div>
-  );
+  )
 }
 
 export default App;
