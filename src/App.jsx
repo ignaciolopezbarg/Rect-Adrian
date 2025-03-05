@@ -1,21 +1,23 @@
-import "./App.css";
-import Child from "./components/Child";
-
-
+import React from "react";
+import "./App.css"; 
 
 function App() {
-  const textito = 'hola desde el padre';
-  const person ={
-    sex: 'male', age: 50
-  }
   return (
-    <div>
-      <h1>Props-Comunicacion entre componentes</h1>
-    <Child msg= {textito} person = {person} ></Child>
-   
+    <div className="dark">
+      <h1>className - htmlFor - select defaultValue</h1>
+<form action="">
+  <label htmlFor="username" >Username</label>
+  <input type="text" id="username" />
+
+  <br />
+</form>
+
     </div>
   )
 }
 
-export default App;
+export default App
+
+
+
 
